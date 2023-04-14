@@ -26,10 +26,10 @@
             <div class="col-md">
                 <div class="row">
                     <div class="col-md-2">
-                        <span class="badge rounded-pill text-bg-danger"><a class="link" href="">Participantes</a></span>
+                        <span class="badge rounded-pill text-bg-danger"><a class="link" href="{% url 'participantes_evento' evento.id%}">Participantes</a></span>
                     </div>
                     <div class="col-md-2">
-                        <span class="badge rounded-pill text-bg-danger"><a class="link" href="">Certificados</a></span>
+                        <span class="badge rounded-pill text-bg-danger"><a class="link" href="{% url 'certificados_evento' evento.id%}">Certificados</a></span>
                     </div>
                 </div>
             </div>

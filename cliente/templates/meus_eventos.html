@@ -1,0 +1,22 @@
+{% extends "bases/base_evento.html" %}
+{% load static %}
+
+
+{% block 'conteudo' %}
+
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        {% for logo in logos %}
+            <div class="col-md-4">
+                <img src="{{logo.logo.url}}" width="100%">
+                <h1>{{ logo.nome }}</h1>
+
+                
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
